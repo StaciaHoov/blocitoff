@@ -10,8 +10,14 @@ class ApplicationController < ActionController::Base
             content_tag :div, capture(&block), class: 'form-group'
         end
     end    
-
-    protected
+    
+    def after_sign_in_path_for(resource)
+        user_path(current_user) 
+    end 
+    
+  
+  protected
+  
     
     def configure_permitted_parameters
         devise_parameter_sanitizer.for(:sign_up) << :name
