@@ -31,7 +31,10 @@ gem 'devise'
 gem 'bcrypt', '~> 3.1.7'
 
 gem 'figaro', '1.0'
+
 gem 'bootstrap-sass'
+
+gem 'whenever', :require => false
 
 
 # Use Unicorn as the app server
