@@ -1,7 +1,7 @@
 <%= content_tag :div, class: 'media', id: "item-#{item.id}" do %>
     <div class='row'>
         <div class='col-md-8'>
-            <h5><%= item.name %> (Due <%=item.expires_at %>)
+            <h5><%= item.name %> (Expires in <%=item.days_left %> days)
             <%= link_to "", [item.user, item], class: 'glyphicon glyphicon-ok', method: :delete, remote: true %>
             </h5>
         </div>
