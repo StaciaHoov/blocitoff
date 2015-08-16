@@ -13,12 +13,12 @@ end
 users = User.all
 
 
-50.times do
+200.times do
     Item.create!(
         user: users.sample,
         name: Faker::Lorem.sentence(3),
         
-        expires_at: Faker::Date.between(7.days.ago, Date.today)
+        expires_at: Faker::Date.between(14.days.ago, Date.today)
     )
 end
 items = Item.all
