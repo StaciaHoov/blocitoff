@@ -1,9 +1,7 @@
 class ItemsController < ApplicationController
-
-
   def create
     @items = current_user.items
-    @item = current_user.items.create(items_params)
+    @item = current_user.items.build(items_params)
     @item.expires_at = Time.now + 7.days
     @user = current_user
     
