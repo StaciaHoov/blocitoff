@@ -1,5 +1,5 @@
 <h3> Create new task</h3>
-<%= form_for [@user, items.build] do |f| %>
+<%= form_for [user, Item.new] do |f| %>
     <div class='form-group'>
         <%= f.text_area :name, class: 'form-control', placeholder: 'Add task' %>
     </div> 
