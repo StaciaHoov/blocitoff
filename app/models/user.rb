@@ -5,5 +5,9 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable, :confirmable
 
   has_many :items
+  
+  # def items
+  #   Item.where(user: self)
+  # end
 
 end

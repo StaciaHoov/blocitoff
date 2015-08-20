@@ -13,6 +13,21 @@ class ItemsController < ApplicationController
     redirect_to user_path(current_user)
   end
   
+  def toggle
+    @item = current_user.items.find(params[:item_id])
+    
+    if @item.completed
+      @item.update_attributes(completed: false)
+      flash[:notice] = "Task completed"
+    else
+      @item.update_attributes(completed: true)
+      flash[:error] = "There was a problem completing the task. Please try again."
+    end
+    
+    redirect_to [@item.user, @item]
+  end
+      
+    
   def destroy
     @user = User.find(params[:user_id])
     @user = current_user
