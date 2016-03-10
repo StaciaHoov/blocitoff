@@ -1,15 +1,16 @@
 # Blocitoff
 
 ## Summary
-Blocitoff is a self-destructing To-Do list application created with Ruby on Rails. 
+Blocitoff is a self-destructing To-Do list application created on Ruby on Rails. 
 I made it with the help of a mentor through the Bloc FullStack Web Development Apprenticeship.  
 
 ## Features
+Uses custom rake tasks to delete expired to-do items (older than 7 days)    
 Users can - 
 * sign up for a free account and view their profile page.
 * create multiple TO-DO items, then mark them as completed and have them deleted without page reload.
-* can view how many days remain before a to-do item is automatically deleted
-Uses custom rake tasks to delete expired to-do items (older than 7 days)
+* can view how many days remain before a to-do item is automatically deleted.    
+
 
 
 ## Technologies
