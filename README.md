@@ -30,4 +30,4 @@ Development Tools, Gems and Methodologies:
 * SendGrid for email processing
 
 ## Deployment
-You can view the app on Heroku: [stacia-blocipedia app](https://stacia-blocipedia.herokuapp.com)
+You can view the app on Heroku: [stacia-blocitoff app](https://stacia-blocitoff.herokuapp.com/)
