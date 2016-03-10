@@ -2,7 +2,7 @@
     <div class='row'>
         <div class='col-md-8'>
             <h5><%= item.name %> (Expires in <%=item.days_left %> days)
-            <%= link_to "", user_item_toggle_path(item.user, item), class: 'glyphicon glyphicon-ok', method: :put %>
+            <%= link_to "", user_item_path(item.user, item), class: 'glyphicon glyphicon-ok', method: :delete, remote: true %>
             <small> <%= item.completed ? "Completed" : "Pending" %></small>
             </h5>
         </div>

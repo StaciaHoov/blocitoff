@@ -28,6 +28,7 @@ Development Tools, Gems and Methodologies:
 * Figaro to manage sensitive information     
 * Devise for user authentication and confirmation 
 * SendGrid for email processing
+* Whenever to provide syntax for writing/deploying cron job
 
 ## Deployment
 You can view the app on Heroku: [stacia-blocitoff app](https://stacia-blocitoff.herokuapp.com/)

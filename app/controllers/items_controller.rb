@@ -23,7 +23,6 @@ class ItemsController < ApplicationController
       @item.update_attributes(completed: true)
       flash[:error] = "There was a problem completing the task. Please try again."
     end
-    
     redirect_to [@item.user, @item]
   end
       
@@ -33,12 +32,11 @@ class ItemsController < ApplicationController
     @user = current_user
     @item = current_user.items.find(params[:id])
     
-    if @item.delete
+    if @item.destroy
       flash[:notice] = "Task completed and removed from your list."
     else
       flash[:error] = "There was an error marking your task as complete."
     end
-    
     respond_to do |format|
       format.html
       format.js
