@@ -1,6 +1,6 @@
 <% if @item.destroyed? %>
     $('#item-' +<%= @item.id %>).hide();
-    $('.js-tasks-count').html("<small>You have <%= pluralize(@user.items.count, 'task') %>.</small>");
+    $('.js-items-count').html('<small>You have <%= pluralize(@user.items.count, 'task') %>.</small>');
 <% else %>
     $('#item-' +<%= @item.id %>).prepend("<div class='alert alert-danger'><%= flash[:error] %></div>");
 <% end %>

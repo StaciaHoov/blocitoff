@@ -1,13 +1,33 @@
 
-<h1 class="media-heading"><%= @user.name.capitalize + "'s To Do List" %></h1>
-    <div class="row">
-        <div class="col-md-8">
-            <div class="js-tasks-count"><small>You have <%= pluralize(@user.items.count, 'task') %>.</small></div>
-            <h3> Tasks </h3>
-            <%= render @items %>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h1 class="user-heading"><%= @user.name.capitalize + "'s List" %>
+        <div class='js-items-count'><small><%= pluralize(@user.items.count, 'task') %> to do.</small></div></h1>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="list-heading">
+                <div class="col-md-4">
+                    <h3> Tasks</h3>
+                </div>
+                <div class="col-md-4">
+                    <h3>Expiration</h3>
+                </div>
+                <div class="col-md-4 checkmark">
+                    <h3>Completed?</h3>
+                </div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <%= render @items %> 
+        </div>
+        <div class="row list-form">
             <%= render partial: 'items/form', locals: { user: @user } %>
         </div>
     </div>
 </div>
+    
 
- 
+
+     

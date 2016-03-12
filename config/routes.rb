@@ -3,8 +3,6 @@ Rails.application.routes.draw do
   get '/about' => 'welcome#about'
   devise_for :users
   resources :users do
-    resources :items, only: [:create, :destroy] do
-      put :toggle
-    end
+    resources :items, only: [:create, :destroy] 
   end
 end

@@ -1,0 +1,135 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+
+body {
+    background-image: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url(<%= asset_path("dew_grass.jpg") %>);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #ddd;
+}
+
+.nav > li > a {
+    color: white;
+    font-size:1.75 rem;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #6F9327;
+}
+
+.nav-pill  {
+    background-color: #8AB110;
+}
+    
+.user-greeting {
+    font-family: 'Satisfy', cursive;
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: rgba(0,0,0, 0.4);
+    margin-top: 15%;
+}
+
+.jumbotron h1 {
+    text-shadow: 0 1px 0 black;
+    font-family: 'Merienda', cursive;
+}
+
+.jumbotron p {
+    margin-bottom: 7px;
+    font-size: 16px;
+}
+
+.btn-lg {
+    background-color: #2E3DFF;
+    border: black;
+    margin-top: 20px;
+}
+
+.btn-success {
+    background-color: #2E3DFF;
+    border: black;
+    margin-left: 62px;
+}
+
+.btn-success:hover {
+    background-color: #6F9327;
+}
+    
+.btn-lg a {
+    font-size: 18px;
+}
+
+.user-info {
+    margin-top: 9px;
+}
+
+.nav {
+    margin-top: 5px;
+}
+
+.panel-default {
+    margin: 8% 25% 0 25%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-color: black;
+    box-shadow: 5px 5px 5px black;
+}
+
+.panel-default > .panel-heading {
+    background-color: #303030;
+}
+
+.user-heading {
+    text-align: center;
+    color: #ddd;
+    padding-left: 20px;
+}
+
+.user-heading > h1 {
+    font-color: #ddd;
+}
+
+.form-control {
+    background-color: #ccc;
+    padding: 10px;
+    margin: 15px auto  0 auto;
+    width: 80%;
+}
+
+
+.list-items {
+    padding-left: 20px;
+    text-align: left;
+}
+
+.days-left {
+    padding-left: 35px;
+}
+
+.checkmark {
+    text-align: center;
+    color: white;
+}
+
+.glyphicon-ok {
+    color: white;
+}
+

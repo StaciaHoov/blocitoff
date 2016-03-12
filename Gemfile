@@ -36,7 +36,7 @@ gem 'bootstrap-sass'
 
 gem 'whenever', :require => false
 
-
+gem 'font-awesome-sass'
 
 # Use Unicorn as the app server
 # gem 'unicorn'

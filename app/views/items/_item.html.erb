@@ -1,10 +1,12 @@
+
 <%= content_tag :div, class: 'media', id: "item-#{item.id}" do %>
-    <div class='row'>
-        <div class='col-md-8'>
-            <h5><%= item.name %> (Expires in <%=item.days_left %> days)
-            <%= link_to "", user_item_path(item.user, item), class: 'glyphicon glyphicon-ok', method: :delete, remote: true %>
-            <small> <%= item.completed ? "Completed" : "Pending" %></small>
-            </h5>
-        </div>
+    <div class='col-md-4 list-items'> 
+        <h5><%= item.name %></h5>
     </div>
-<% end %>
+    <div class='col-md-4 days-left'> 
+        <%=item.days_left %> days
+    </div>
+    <div class='col-md-4 checkmark'>
+        <%= link_to "", user_item_path(item.user, item), class: 'glyphicon glyphicon-ok', method: :delete, remote: true %>
+    </div>
+<% end %> 
