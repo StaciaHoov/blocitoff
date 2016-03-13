@@ -4,12 +4,7 @@ class ItemsController < ApplicationController
     @item = current_user.items.build(items_params)
     @item.expires_at = Time.now + 7.days
     @user = current_user
-    
-    if @item.save
-      flash[:notice] = "Task added to your To Do list."
-    else
-      flash[:error] = "Error saving task. Please try again."
-    end
+    @item.save
     redirect_to user_path(current_user)
   end
     
