@@ -1,4 +1,4 @@
-# To Do List
+# Task To Do List
 
 ## Summary
 A self-destructing To-Do list application created on Ruby on Rails. 
