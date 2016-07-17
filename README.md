@@ -1,8 +1,8 @@
-# Blocitoff
+# To Do List
 
 ## Summary
-Blocitoff is a self-destructing To-Do list application created on Ruby on Rails. 
-I made it with the help of a mentor through the Bloc FullStack Web Development Apprenticeship.  
+A self-destructing To-Do list application created on Ruby on Rails. 
+Made with the help of my mentor in the Bloc FullStack Web Development Apprenticeship.  
 
 ## Features
 Users can - 
@@ -31,4 +31,4 @@ Development Tools, Gems and Methodologies:
 * Whenever to provide syntax for writing/deploying cron job
 
 ## Deployment
-You can view the app on Heroku: [stacia-blocitoff app](https://stacia-blocitoff.herokuapp.com/)
+You can view the app on Heroku: [To Do List app](https://to-do-list.herokuapp.com/)

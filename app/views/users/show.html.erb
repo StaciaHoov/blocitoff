@@ -1,7 +1,7 @@
 
 <div class="panel panel-default">
     <div class="panel-heading">
-        <h1 class="user-heading"><%= @user.name.capitalize + "'s List" %>
+        <h1 class="page-heading"><%= @user.name.capitalize + "'s List" %>
         <div class='js-items-count'><small><%= pluralize(@user.items.count, 'task') %> to do.</small></div></h1>
     </div>
     <div class="panel-body">

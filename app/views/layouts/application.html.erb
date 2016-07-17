@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Blocitoff</title>
+      <title>To Do List</title>
       <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
       <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -15,18 +15,25 @@
             <div class="row">
                 <div class="col-md-4">
                     <ul class="nav nav-pills nav-justified">
-                        <li><%= link_to "Blocitoff", root_path %></li>
-                        <li><%= link_to "My  Tasks", user_path(current_user) if current_user%></li>
+                        <li class="menu-item"><%= link_to "Home", root_path %></li>
+                        <li class="menu-item"><%= link_to "My  Tasks", user_path(current_user) if current_user%></li>
                 </div>        
                     <div class="pull-right user-info">
                         <% if current_user %>
-                            <span class="user-greeting">Hi <%= current_user.name || current_user.email %>!</span>
+                            <li class="list-unstyled"><span class="user-greeting">Hi <%= current_user.name || current_user.email %>!</span>
                             <%= link_to destroy_user_session_path, method: :delete, class: "btn btn-default btn-sm" do %>
-                                <span class="glyphicon glyphicon-log-out"></span>
+                                <span class="glyphicon glyphicon-log-out"></span></li>
                             <% end %>
                         <% else %>
-                            <%= link_to "Sign In", new_user_session_path %> or
-                            <%= link_to "Sign Up", new_user_registration_path %>
+                            <li role="presentation" class="dropdown list-unstyled">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" ariua-haspopup="true" aria-expanded="false">
+                                  <span class="glyphicon glyphicon-menu-hamburger"></span>  
+                                </a>
+                                <ul class= "dropdown-menu">
+                                    <li class="menu-item"><%= link_to "Log In", new_user_session_path %></li>
+                                    <li class="menu-item"><%= link_to "Sign Up", new_user_registration_path %></li>
+                                </ul>
+                            </li>
                         <% end %>
                     </div>
                 </ul>

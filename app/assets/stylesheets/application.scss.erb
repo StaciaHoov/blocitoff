@@ -17,7 +17,11 @@ body {
     color: #ddd;
 }
 
-.nav > li > a {
+.nav {
+    margin-top: 5px;
+}
+
+.menu-item > a {
     color: white;
     font-size:1.75 rem;
     letter-spacing: 0.05rem;
@@ -25,6 +29,22 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer
+}
+
+.dropdown-menu > li > a {
+    color: white;
+    font-size:1.75 rem;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer
+}
+
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-color: black;
+    box-shadow: 5px 5px 5px black;
 }
 
 .nav > li > a:hover, .nav > li > a:focus {
@@ -35,12 +55,11 @@ body {
 .nav-pill  {
     background-color: #8AB110;
 }
-    
-.user-greeting {
-    font-family: 'Satisfy', cursive;
-    font-size: 20px;
-    padding-right: 10px;
+
+.dropdown-toggle {
+    color: white;
 }
+
 
 .jumbotron {
     text-align: center;
@@ -56,6 +75,12 @@ body {
 .jumbotron p {
     margin-bottom: 7px;
     font-size: 16px;
+}
+
+.user-greeting {
+    font-family: 'Satisfy', cursive;
+    font-size: 20px;
+    padding-right: 10px;
 }
 
 .btn-lg {
@@ -82,9 +107,6 @@ body {
     margin-top: 9px;
 }
 
-.nav {
-    margin-top: 5px;
-}
 
 .panel-default {
     margin: 3% 20% 0 20%;
@@ -97,7 +119,7 @@ body {
     background-color: #303030;
 }
 
-.user-heading {
+.page-heading {
     text-align: center;
     color: #ddd;
     padding-left: 20px;
@@ -132,4 +154,6 @@ body {
 .glyphicon-ok {
     color: white;
 }
+
+
 
